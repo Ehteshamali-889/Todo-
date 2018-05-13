@@ -12,12 +12,20 @@ document.querySelector('.header__btn').addEventListener('click', function () {
 function addToDo(text) {
     var todo = document.querySelector('.todo');
     var item = document.createElement('li');
-    var paragraph = document.createElement('p');
-    paragraph.classList.add('paragraph');
     item.innerText = text;
     item.classList.add('item');
+    var paragraph = document.createElement('p');
+    paragraph.classList.add('paragraph');
+    var remove = document.createElement('div');
+    remove.classList.add('remove-btn');
     todo.appendChild(item);
     item.appendChild(paragraph);
+    item.appendChild(remove);
+
+    remove.addEventListener('click',function(){
+        item.style.display = 'none';
+    })
+
     item.addEventListener('click', function () {
         item.classList.toggle('crossed-out');
     })
