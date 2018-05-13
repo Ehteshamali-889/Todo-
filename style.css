@@ -244,3 +244,16 @@ body {
     opacity: 0.3;
     box-shadow: none;
 }
+
+.footer {
+    margin-top: 2.5rem;
+    min-height: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.footer-paragraph {
+    font-size: 1.6rem;
+    color: #fff;
+}
