@@ -1,4 +1,23 @@
-document.querySelector('.header__btn').addEventListener('click', function () {
+document.querySelector('.header__clear').addEventListener('click',function(){
+
+
+    //Try to remove LI (fail)
+    
+    /*var item = [document.querySelector('.item')];
+    for (var i = 0; i < item.length; i++) {
+        item[i].closest('li').remove();
+    }*/
+
+    //TRY TO REMOVE UL  
+    var todo = document.querySelector('.todo');
+    todo.closest('ul').innerHTML = '';
+
+    
+    
+    
+});
+
+document.querySelector('.header__add').addEventListener('click', function () {
     var inputTodo = document.querySelector('.header__input');
     //addToDo(inputTodo.value);
     if (inputTodo.value) {

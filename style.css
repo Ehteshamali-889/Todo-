@@ -67,14 +67,14 @@ body {
 }
 
 .header__input {
-    width: 90%;
+    width: 80%;
     height: 65%;
     border-radius: .5rem;
     border: none;
     background-color: rgba(255, 255, 255, .70);
     color: #999;
     text-indent: 1.5rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
     outline: none;
 }
 
@@ -90,7 +90,7 @@ body {
     color: #999;
 }
 
-.header__btn {
+.header__add {
     padding: 1rem 2rem;
     height: 65%;
     border: none;
@@ -106,7 +106,37 @@ body {
     outline: none;
 }
 
-.header__btn::after {
+
+.header__clear {
+    height: 5rem;
+    width: 7rem;
+    border: none;
+    font-size: 1.6rem;
+    position: absolute;
+    border-radius: .3rem;
+    right: 2.5rem;
+    color: #999;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, .70);
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+    outline: none;
+  
+}
+
+.header__clear:hover {
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0,.50);
+}
+
+.header__clear:active {
+    transform: translateY(-.1rem);
+    box-shadow: 0 .8rem 1.5rem rgba(0, 0, 0,.30);
+    opacity: .5;
+}
+
+.header__add::after {
     content: "";   
     width: .3rem;
     height:100%;
@@ -121,7 +151,7 @@ body {
 
 
 
-.header__btn:hover::after {
+.header__add:hover::after {
     transform: scaleY(1);
     width: 100%;
     
