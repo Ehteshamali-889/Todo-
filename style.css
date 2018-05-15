@@ -79,10 +79,10 @@ body {
 }
 
 .header__input:focus {
-    border-bottom: .2rem solid green;
+    border-bottom: .2rem solid red;
 }
 .header__input:invalid {
-    border-bottom: .2rem solid red;
+    border-bottom: .2rem solid green;
 }
 
 .header__input::-webkit-input-placeholder {
