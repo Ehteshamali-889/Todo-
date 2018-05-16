@@ -40,3 +40,11 @@ function addToDo(text) {
         item.classList.toggle('crossed-out');
     })
 }
+
+
+//footer dynamic date
+(function dynamicDate(){
+    var year = new Date().getFullYear();
+    var date = `${year}`;
+    document.getElementById('span-date').innerHTML = date;
+}());
