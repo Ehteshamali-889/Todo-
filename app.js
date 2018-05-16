@@ -22,13 +22,14 @@ function result() {
 }
 
 function addToDo(text) {
-    var todo = document.querySelector('.todo');
-    var item = document.createElement('li');
+    var todo, item, paragraph, remove
+    todo = document.querySelector('.todo');
+    item = document.createElement('li');
     item.innerText = text;
     item.classList.add('item');
-    var paragraph = document.createElement('p');
+    paragraph = document.createElement('p');
     paragraph.classList.add('paragraph');
-    var remove = document.createElement('div');
+    remove = document.createElement('div');
     remove.classList.add('remove-btn');
     todo.appendChild(item);
     item.appendChild(paragraph);
